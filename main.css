@@ -18,8 +18,18 @@ body {
 }
 
 body {
-	background: var(--color-background);
+	background: var(--color_base_dark);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+h1 {
+	font: 700 50rem Josefin+Sans;
+	color: white;
+}
+
+p {
+	font: 400 20rem Montserrat;
+	color: --color_base_light;
 }
