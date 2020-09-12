@@ -33,3 +33,7 @@ p {
 	font: 400 20rem Montserrat;
 	color: --color_base_light;
 }
+
+a {
+	max-width: 5vw;
+}
