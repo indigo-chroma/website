@@ -1,0 +1,25 @@
+:root {
+	--color_base_dark: #240168;
+	--color_base_light: #AECEFE;
+	--color_comp_dark: #B91A6C;
+	--coor_comp_light: #F39C12;
+}
+
+* {
+	/* "*" overrides browser default */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100vh; /* divide box in 100 */
+}
+
+body {
+	background: var(--color-background);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
