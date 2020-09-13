@@ -25,14 +25,14 @@ body {
 }
 
 h1 {
-    font: 700 5rem Josefin Sans;
-    color: white;
-    text-align: center;
+	font: 700 5rem Josefin Sans;
+	color: white;
+	text-align: center;
 }
 
 p {
 	font: 400 1rem Montserrat;
-	color: --color_base_light;
+	color: var(--color_base_light);
 }
 
 .contact-button img {
