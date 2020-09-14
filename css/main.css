@@ -10,18 +10,60 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font: 400 1rem Josefin Sans;
 }
 
 html,
 body {
 	height: 100vh; /* divide box in 100 */
+	background: var(--color_base_dark);
+
+}
+
+.header {
+	background-color: white;
+	font: 700 1vw Josefin Sans;
+	color: var(--color_base_dark);
+
+	display: flex;
+	align-items: center;
+	justify-content: right;
+
+	height: 50px;
+	width: 100%;
+}
+
+
+.header a {
+	text-decoration: none;
+	color: var(--color_base_dark);
+	
+	justify-content: right;
+	padding: 15px;
+}
+
+.header img {
+	justify-content: left;
 }
 
 body {
-	background: var(--color_base_dark);
+    background: var(--color_base_dark);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.footer:after {
+	background-color: white;
+	font: 400 1vw Josefin Sans;
+	color: var(--color_base_dark);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+	content: '© 2020 | Indigo Chroma studio | v.0.010';
 }
 
 h1 {
@@ -30,11 +72,40 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font: 700 2rem Josefin Sans;
+	color: white;
+	text-align: center;
+}
+
 p {
-	font: 400 1rem Montserrat;
+	font: 500 2vw Montserrat;
 	color: var(--color_base_light);
 }
 
-.contact-button img {
+
+a {
+    text-decoration: none;
+    color: var(--color_base_light);
+}
+
+.home-button img {
+	min-width: 2vw;
 	max-width: 5vw;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    p {
+		text-align: left;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+	p {
+		font-size: 22px;
+	}
 }
