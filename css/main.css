@@ -1,8 +1,8 @@
 :root {
-	--color_base_dark: #240168;
-	--color_base_light: #AECEFE;
-	--color_comp_dark: #B91A6C;
-	--coor_comp_light: #F39C12;
+	--colorBaseDark: rgb(0, 51, 128);
+	--colorBaseLight: #acc3e5;
+	--colorCompDark: rgb(185, 26, 108);
+	--colorCompLight: #F39C12;
 }
 
 * {
@@ -16,14 +16,14 @@
 html,
 body {
 	height: 100vh; /* divide box in 100 */
-	background: var(--color_base_dark);
+	background: var(--colorBaseDark);
 
 }
 
 .header {
 	background-color: white;
 	font: 700 1vw Josefin Sans;
-	color: var(--color_base_dark);
+	color: var(--colorBaseDark);
 
 	display: flex;
 	align-items: center;
@@ -36,7 +36,7 @@ body {
 
 .header a {
 	text-decoration: none;
-	color: var(--color_base_dark);
+	color: var(--colorBaseDark);
 	
 	justify-content: right;
 	padding: 15px;
@@ -47,7 +47,7 @@ body {
 }
 
 body {
-    background: var(--color_base_dark);
+    background: var(--colorBaseDark);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -56,14 +56,14 @@ body {
 .footer:after {
 	background-color: white;
 	font: 400 1vw Josefin Sans;
-	color: var(--color_base_dark);
+	color: var(--colorBaseDark);
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	padding: 10px;
-	content: '© 2020 | Indigo Chroma studio | v.0.010';
+					content: '© 2020 | Indigo Chroma studio | v.0.013';
 }
 
 h1 {
@@ -73,20 +73,20 @@ h1 {
 }
 
 h2 {
-	font: 700 2rem Josefin Sans;
+	font: 700 4.5vw Josefin Sans;
 	color: white;
 	text-align: center;
 }
 
 p {
 	font: 500 2vw Montserrat;
-	color: var(--color_base_light);
+	color: var(--colorBaseLight);
 }
 
 
 a {
     text-decoration: none;
-    color: var(--color_base_light);
+    color: magenta;
 }
 
 .home-button img {
@@ -96,16 +96,48 @@ a {
 
 
 
-@media screen and (max-width: 700px) {
+/* font min size */
+@media screen and (max-width: 750px) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
     p {
 		text-align: left;
-        font-size: 14px;
-    }
+        font-size: 1rem;
+	}	
 }
 
 
+/* font max size */
 @media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
 	p {
-		font-size: 22px;
+		font-size: 1.25rem;
+	}
+}
+
+
+/* mobile screen */
+@media screen and (max-width: 900px) {
+	.header {
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 1200px) {	
+	.footer:after {
+		font-size: 12px;
 	}
 }

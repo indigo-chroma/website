@@ -3,7 +3,142 @@
     width: 100vw;
 }
 
-.logo-container {
-    background: var(--color_base_dark);
+#container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.logoContainer {
+    height: 700px;
+    width: 100vw;
+    background: var(--colorBaseDark);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logoContainer img{
+    align-self: center;
+    justify-self: center;
+    
+    width: 50vw;
+    max-width: 750px;
+
+    padding-bottom: 10vh;
+}
+
+.tag {
+    width: inherit;
+    max-width: 1500px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    
+}
+
+.logoContainer p {
+    justify-self: center;
+    align-self: center;
+    
+    font: 400 3vw Josefin Sans;
+    color: white;
+}
+
+p.dG {
+    padding-right: 20%;
+    z-index: 1;
+}
+
+p.dD {
+    padding-left: 20%;
+    z-index: 1;
+}
+
+p.and {
+    margin-top: -1.5%;
+    margin-bottom: -2.5%;
+    color: var(--colorBaseLight);
+    font-size: 5vw;
+    
+    z-index: 0;
+}
+
+
+
+
+.displayContainer {
+    height: 100px;
+    width: 100vw;
+    background: var(--colorBaseLight);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.display {
+    height: 100%;
+    width: 100%;
+    max-width: 900px;
+    padding: 0, 10%;
+    display: flex;;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.display img {
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+.displayItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .logoContainer {
+        height: 500px;
+    }
+
+    .logoContainer p {
+        font-size: 1.5rem;
+    }
+
+    p.and {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logoContainer img {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .logoContainer p {
+        font-size: 2.5rem;
+    }
+    
+    p.and {
+        font-size: 5rem;
+    }
+}
+
 
