@@ -31,6 +31,7 @@ body {
 
 	height: 50px;
 	width: 100%;
+	
 }
 
 
@@ -112,7 +113,7 @@ a {
 	}
 
 	.footer:after {
-		font-size: 8px;
+		font-size: .4rem;
 	}
 }
 
@@ -134,7 +135,7 @@ a {
 
 @media screen and (max-width: 1200px) {	
 	.footer:after {
-		font-size: 12px;
+		font-size: .9rem;
 	}
 }
 
@@ -142,6 +143,7 @@ a {
 @media screen and (max-width: 900px) {
 	.header {
 		visibility: hidden;
+		overflow: hidden;
 	}
 }
 
