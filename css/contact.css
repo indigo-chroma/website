@@ -1,158 +1,92 @@
-#pageContact {
-    height: 100vh;
-    width: 100vw;
-    background: var(--colorBaseDark);
-}
-
 
 #container {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
-    margin: 15px;
+    margin: 4rem;
     margin-bottom: 4rem;
 }
 
-
 p {
-    line-height: 2;
+    line-height: 2.5rem;
+    padding: 2rem;
 }
 
 
 .contentMaxWidth {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
 }
 
-
-
-
 .local {
-    padding-top: 15px;
-    background: var(--colorBaseDark);
-    max-width: 100vw;
-    padding-bottom: 75px; 
+    background-color: var(--colorBaseDark);
 }
 
 .localInfo {
     display: flex;
-    flex-direction: row;
-    align-items: top;
     justify-content: center;
+    align-items: center;
 }
 
-.local p {
-    margin: 0 50px 15px;
-    padding: 0;
-    min-width: 100px;
+iframe {
+    padding: 2rem;
 }
-
-.mapouter iframe {
-    width: 50vw !important;
-}
-
 
 .contact {
-    padding-top: 75px;
-    padding-bottom: 50px;
     background-color: var(--colorBaseLight);
 }
 
 .contactInfo {
     display: flex;
-    flex-direction: row;
-    align-items: top;
-    justify-content: center;
 }
 
-.contact p {
-    margin: 0 50px 15px;
-    
+.contactInfo p {
     color: var(--colorBaseDark);
     text-align: right;
 }
 
-section.form {
-    overflow: hidden;
+.form {
+    width: 50vw;
+    padding: 2rem;
 }
 
-.contactForm {
-    padding: 5px;
-    margin-top: -150px;
-    margin-bottom: -150px;
-    margin-right: 90px;
+.form p {
+    font-size: .5rem;
+    color: black;
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 
-
-@media screen and (max-width: 900px) {
-
-    .header {
-        height: 0;
+@media screen and (max-width: 700px) {
+    .localInfo {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
-    h2 {
-        margin-bottom: 1.5rem;
-    }
-
-    .local {
-        padding: 3rem 0;
-    }
-
-    .contentMaxWidth {
-        margin-left: 2%;
-        margin-right: 2%;
+    iframe {
+        width: 100vw;
         padding: 0;
     }
 
-    .localInfo {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .localInfo p {
-        order: 1;
-    }
-
-    .mapouter {
-        order: 2;
-    }
-
-    .mapouter iframe {        
-        width: 100vw !important;
-        margin-left: 500px;
-        margin-right: 500px;
-    }
-
-
-
-    .contact {
-        padding: 3rem 0;
-    }
-
     .contactInfo {
-        display: flex;
         flex-direction: column;
-    
         justify-content: center;
         align-items: center;
     }
 
-    .contact p {
-        text-align: left;
-    }
-
-    .contactForm {
-        margin-right: 0px;
-    }
-
-    .contactForm iframe {
+    .form {
         width: 80vw;
+        padding: 0;
     }
+
 }
