@@ -52,11 +52,12 @@ h2{
     height: 100vh;
     max-width:100%;
 
-    height: fit-content;;
+    height: fit-content;
 }
 
 .frame {
-    max-width/max-height: 640px;
+    max-width: 640px;
+    max-height: 640px;
     height: 30vw;
 
 
