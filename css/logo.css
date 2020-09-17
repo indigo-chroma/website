@@ -1,0 +1,116 @@
+#pageLogo {
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#container {
+    
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    
+    overflow-y: auto;
+}
+
+
+
+
+.logoIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    max-width: 50vw;
+    margin: 7rem auto 5rem;
+    text-align: center;
+
+}
+
+h2{
+    max-width: 50vw;
+    margin: 0 auto 4rem;
+}
+
+
+
+
+.logoList {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 0;
+}
+
+.frame {
+    height: 33vw;
+    max-width: 640px;
+    max-height: 640px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+}
+
+.logo {
+    max-width: 30vw;
+    max-height: 100%;
+
+    padding: 3rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .logoList {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .logo {
+        max-width: 50vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h2 {
+        max-width: 80vw;
+    }
+
+    .logoList {
+        grid-template-columns: 1fr;
+    }
+    
+    .frame {
+        height: 40vh;
+        overflow: hidden;
+    }
+
+    .logo {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    p {
+        margin: 3rem auto 2rem;
+    }

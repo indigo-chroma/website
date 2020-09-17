@@ -72,12 +72,14 @@ p.and {
 
 
 .displayContainer {
-    height: 100px;
+    height: fit-content;
     width: 100vw;
     background: var(--colorBaseLight);
     display: flex;
     justify-content: center;
     align-content: center;
+    padding: 20px;
+    
 }
 
 .display {
@@ -85,28 +87,47 @@ p.and {
     width: 100%;
     max-width: 900px;
     padding: 0, 10%;
-    display: flex;;
-    align-content: center;
+    display: flex;
     justify-content: space-evenly;
+    position: relative;
 }
 
-.display img {
-    height: 50px;
-    width: 50px;
-    justify-self: center;
-    align-self: center;
-}
+
 
 .displayItem {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
 
     text-align: center;
+    position: relative;
+
 }
 
+.display img {
+    width: 5vw;
+    min-width: 50px;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    padding: 0;
+    margin: 0;
+}
 
+.displayItem a {
+    font-size: 1.8vw;
+    margin-top: 1vh;
+}
+
+.displayBreak {
+    height: 100%;
+    width: .5vw;
+    min-width: 3px;
+    max-width: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
 
 
 @media screen and (max-width: 750px) {
@@ -121,7 +142,12 @@ p.and {
     p.and {
         font-size: 3rem;
     }
+
+    .displayItem a {
+        font-size: 1rem;
+    }
 }
+
 
 @media screen and (max-width: 600px) {
     .logoContainer img {
@@ -138,6 +164,10 @@ p.and {
     
     p.and {
         font-size: 5rem;
+    }
+
+    .displayItem a {
+        font-size: 1.5rem;
     }
 }
 
