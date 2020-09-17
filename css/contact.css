@@ -79,9 +79,10 @@ iframe {
         margin-right: 0;
     }
 
-    .p {
+    p {
         padding-left: 0;
         padding-right: 0;
+        text-align: left;
     }
 
     
@@ -104,6 +105,10 @@ iframe {
         justify-content: center;
         align-items: center;
         margin: 0;
+    }
+
+    .contactInfo p {
+        text-align: left;
     }
 
     .form {

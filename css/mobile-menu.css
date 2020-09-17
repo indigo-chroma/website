@@ -12,6 +12,7 @@ a.active {
     top: 0;
     right: 0;
     z-index: 1;
+    height: 100vh;
 }
 
 .menu-wrap .toggler {
@@ -20,8 +21,8 @@ a.active {
     right: 0;
     z-index: 2;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     opacity: 0;
 }
 
@@ -30,8 +31,8 @@ a.active {
     top: 0;
     right: 0;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     padding: 1rem;
     background: var(--colorCompLight);
     display: flex;
@@ -100,6 +101,7 @@ a.active {
     top: 0;
     right: -350px;
     margin-right: 0;
+    padding-top: 100px;
     width: 35%;
     height: 100vh;
     opacity: 0;
@@ -115,7 +117,6 @@ a.active {
     background: var(--colorOverlay);
     
     text-align: right;
-    padding-top: 15%;
 }
 
 
@@ -128,6 +129,7 @@ a.active {
     margin-left: 10%;
     padding-right: 15%;
     font-size: 5vw;
+    max-height: 2vh;
 }
 
 .menu-wrap .menu a.home-button {
@@ -149,7 +151,7 @@ a.active {
 }
 
 .menu-wrap .menu a.active {
-    color: var(--colorBaseLight);
+    color: gray;
     pointer-events: none;
 }
 
@@ -163,4 +165,19 @@ a.active {
         z-index: -1;
     }
 
+}
+
+
+@media screen and (max-height: 600px) {
+    .menu-wrap .menu {
+        padding-top: 50px;
+    }
+
+    .menu-wrap .menu a,
+    .menu-wrap .menu a.home-button {
+        font-size: 200%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 auto;
+    }
 }

@@ -35,6 +35,16 @@ body {
 	padding: 0;
 }
 
+.header > div {
+	height: 50px;
+	width: 50px;
+	padding-top:50px;
+	display: grid;
+}
+
+.header > div > img{
+	height: 100%;
+}
 
 .header a {
 	text-decoration: none;
@@ -95,18 +105,20 @@ a {
 
 
 /* font min size */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 	h1 {
 		font-size: 5rem;
 	}
 
 	h2 {
 		font-size: 2rem;
+		line-height: 2.5rem;
 	}
 
     p {
 		text-align: left;
-        font-size: 1rem;
+		font-size: 1.5rem;
+		line-height: 2rem;
 	}
 
 	.footer:after {

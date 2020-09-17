@@ -19,6 +19,7 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 .logoContainer img{
@@ -57,11 +58,12 @@ p.dG {
 p.dD {
     padding-left: 20%;
     z-index: 1;
+    padding-bottom: 30px;
 }
 
 p.and {
-    margin-top: -1.5%;
-    margin-bottom: -2.5%;
+    margin-top: -.5rem;
+    margin-bottom: -1rem;
     color: var(--colorBaseLight);
     font-size: 5vw;
     
@@ -78,7 +80,8 @@ p.and {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 20px;
+    padding: 20px 0;
+
     
 }
 
@@ -86,10 +89,12 @@ p.and {
     height: 100%;
     width: 100%;
     max-width: 900px;
-    padding: 0, 10%;
+    padding: 0, 20vw;
     display: flex;
     justify-content: space-evenly;
     position: relative;
+
+    
 }
 
 
@@ -102,7 +107,6 @@ p.and {
 
     text-align: center;
     position: relative;
-
 }
 
 .display img {
@@ -118,6 +122,11 @@ p.and {
 .displayItem a {
     font-size: 1.8vw;
     margin-top: 1vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .displayBreak {
@@ -149,9 +158,13 @@ p.and {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .logoContainer img {
         width: 80%;
+    }
+
+    .display {
+        max-width: 100vw;
     }
 
 }
