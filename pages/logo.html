@@ -5,44 +5,59 @@
     <title>Logos | Indigo Chroma</title>
 
       
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/logo.css">
-  <link rel="stylesheet" href="../css/mobile-menu.css">
+  <link rel="stylesheet" href="../css/menuBar.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
 </head>
 
-<body id="pageLogo">
-    <div id="container">
+<body>
+    <header>
+        <div class="container">
+          <nav>
+            <div class="menuLogo">
+              <a href="../index.html">
+                <img src="../assets/icons/logo.png" alt="Indigo Chroma Studio">
+              </a>
+            </div>
+    
+            <input type="checkbox" class="toggler">
+            <div class="menuIcon"><div></div></div>
+    
+            <ul class="menuList">
+              <li class="menuItem">
+                <a href="../pages/logo.html" class="menuLink">Logos</a>
+              </li>
+              <li class="menuItem">
+                <a href="../pages/print.html" class="menuLink">Impressos</a>
+              </li>
+              <li class="menuItem">
+                <a href="../pages/3d.html" class="menuLink">3D</a>
+              </li>
+              <li class="menuItem active">
+                <a href="../pages/contact.html" class="menuLink">Contato</a>
+              </li>
 
-        <span class="header">
-            <a class="homeButton" href="../index.html">Voltar</a>
-     <!--        <div>
-                <img src="../assets/icons/logo.png" alt="Indigo Chroma studio">
-            </div> -->
-
-            <a href="../pages/logo.html" class="active">Logos e +</a>
-            <a href="../pages/print.html">Impressos</a>
-            <a href="../pages/paper.html">Papelaria</a>
-            <a href="../pages/3d.html">3D</a>
-            <a href="../pages/contact.html">Contato</a>
-        </span>
+              <li class="menuItem menuItemHome">
+                <a href="../index.html" class="menuLink">
+                  <img src="../assets/icons/return.svg">
+                  Voltar ao Início</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
 
 
+    <main>
         <div class="logoIntro">
-            <img src="../assets/icons/logo.png" alt="Indigo Chroma studio">
-
-            <p>Criamos o seu Logotipo, desenvolvemos o Branding e tudo mais o que a sua marca precisar para chamar a atenção no meio da concorrência.</p>
-
-            <div class="sectionBreak"></div>
-
-            <h2>Conheça alguns<br>de nossos trabalhos</h2>
+            <img src="../assets/icons/logo.png" alt="Indigo Chroma Studio">
         </div>
 
-
-        <div class="test">
+        <h2>Conheça alguns<br>de nossos trabalhos</h2>
 
             <div class="logoList">
                 <div class="frame" style="background-image: url('../assets/images//bg/sgb-bg.png')">                
@@ -65,35 +80,17 @@
                     <img src="../assets/images/logos/inui.png" alt="Flora Inui" class="logo">
                 </div>
             </div>
-        </div>
 
 
-        <div class="idVisualContainer">
+        
             <p>Te ajudamos a desenvolver toda a Identidade Visual da sua marca, de Cartões de Visita e Papel Timbrado ao Manual de Identidade e até seus posts para Mídias Sociais.</p>
-        </div>
-
-    
-
+        
+    </main>
 
 
+    <footer>
         <span class="footer"></span>
-
-    
-    </div>
-
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-          <a href="../pages/logo.html" class="active">Logos</a>
-          <a href="../pages/print.html">Impressos</a>
-          <a href="../pages/3d.html">3D</a>
-          <a href="../pages/paper.html">Papelaria</a>
-          <a href="../pages/contact.html">Contato</a>
-          <a href="../index.html" class="home-button">Voltar ao<br>Início</a>
-        </div>
-    </div>
-
+    </footer>
 
 </body>
 </html>

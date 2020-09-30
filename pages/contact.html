@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contato | Indigo Chroma</title>
   
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/contact.css">
-  <link rel="stylesheet" href="../css/mobile-menu.css">
+  <link rel="stylesheet" href="../css/menuBar.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -16,101 +16,103 @@
 </head>
 
 
-<body id="pageContact">
-  <div id="container">
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="menuLogo">
+          <a href="index.html">
+            <img src="../assets/icons/logo.png" alt="Indigo Chroma Studio">
+          </a>
+        </div>
 
-    <span class="header">
-      <a class="homeButton" href="../index.html">Voltar</a>
-      <a href="../pages/logo.html">Logos e +</a>
-      <a href="../pages/print.html">Impressos</a>
-      <a href="../pages/paper.html">Papelaria</a>
-      <a href="../pages/3d.html">3D</a>
-      <a href="../pages/contact.html" class="active">Contato</a>
+        <input type="checkbox" class="toggler">
+        <div class="menuIcon"><div></div></div>
 
-    </span>
-    
-
-      <div class="contact">
+        <ul class="menuList">
+          <li class="menuItem">
+            <a href="../pages/logo.html" class="menuLink">Logos</a>
+          </li>
+          <li class="menuItem">
+            <a href="../pages/print.html" class="menuLink">Impressos</a>
+          </li>
+          <li class="menuItem">
+            <a href="../pages/3d.html" class="menuLink">3D</a>
+          </li>
+          <li class="menuItem active">
+            <a href="../pages/contact.html" class="menuLink">Contato</a>
+          </li>
           
+          <li class="menuItem menuItemHome">
+            <a href="../index.html" class="menuLink">
+              <img src="../assets/icons/return.svg">
+              Voltar ao Início</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <main>
+    <section class="contact">
+      <div class="contentMaxWidth">
+
         <h2>Fale com a gente</h2>
 
-        <div class="contentMaxWidth">
-
-          <div class="contactInfo">
-
-            <p>e-mail: mail@gmail.com<br>
-              fone: (11)4444-0000<br>
-              whatsapp: (11)999-888-777</p>
-          
+        <div class="contactInfo">
+          <p>e-mail: mail@gmail.com<br>
+          fone: (11)4444-0000<br>
+          whatsapp: (11)999-888-777</p>
 
           <section class="form">
             <div class="contactForm">
               <div class="cognito">
                 <script src="https://www.cognitoforms.com/s/OuJ5VkWz_kC6URM0b5KUtQ"></script>
                 <script>Cognito.load("forms", { id: "1" });</script>
-                </div>
-              <!--
+              </div>
+
+              <!--    google forms
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuxnr5_8zZ0TqQPUEsMHZGnIcM8-9aSQ0_UW0ScuyvGJjvlQ/viewform?embedded=true" width="750" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               -->
+
             </div>
           </section>
-          
         </div>
-
-        </div>
-
-
-
       </div>
+    </section>
 
-
-      <div class="local">
-        
+    <section class="local">
+      <div class="contentMaxWidth">
+      
         <h2>Onde estamos</h2>
 
-        <div class="contentMaxWidth">
-          <div class="localInfo">
+        <div class="localInfo">
 
-            <div class="mapouter"><iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=zeferino%20alves%20amaral%201223&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-    
-            <!--    custom map
-              <section class="map">
-                <iframe class="gmap" src="https://www.google.com/maps/d/u/0/embed?mid=1mlRa7ngwwsQizq44LY0LTg6D48gH-Tbc" width="600" height="350"></iframe>
-              </section>
-            -->
+          <div class="mapouter"><iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=zeferino%20alves%20amaral%201223&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
 
-             <p>
-              Rua Dr. Zeferino Alves do Amaral<br>
-              nº 1223<br>
-              Loanda<br>
-              Atibaia/SP
-            </p>
+          <!--    custom map
+            <section class="map">
+              <iframe class="gmap" src="https://www.google.com/maps/d/u/0/embed?mid=1mlRa7ngwwsQizq44LY0LTg6D48gH-Tbc" width="600" height="350"></iframe>
+            </section>
+          -->
 
-          </div>
+          <p>
+            Rua Dr. Zeferino Alves do Amaral<br>
+            nº 1223<br>
+            Loanda<br>
+            Atibaia/SP
+          </p>
+
         </div>
       </div>
+    </section>
+  </main>
 
 
-    
-
-
-
-
+  <footer>
     <span class="footer"></span>
-
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <a href="../pages/logo.html">Logos</a>
-      <a href="../pages/print.html">Impressos</a>
-      <a href="../pages/3d.html">3D</a>
-      <a href="../pages/paper.html">Papelaria</a>
-      <a href="../pages/contact.html" class="active">Contato</a>
-      <a href="../index.html" class="home-button">Voltar ao<br>Início</a>
-    </div>
-  </div>
-
+  </footer>
 
 </body>
 

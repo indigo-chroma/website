@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Indigo Chroma</title>
+  <title>Indigo Chroma Studio</title>
   
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/landing.css">
-  <link rel="stylesheet" href="css/mobile-menu.css">
+  <link rel="stylesheet" href="css/menuBar.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
@@ -16,127 +16,119 @@
 </head>
 
 
-<body id="pageLanding">
-
-
-
-    <div id="container">
-
-      <div class="logoContainer">
-        <img src="assets/icons/logo.png" alt="Indigo Chroma studio">
-      
-        <div class="tag">
-          <p class="dG">design gráfico</p>
-          <p class="and">&</p>
-          <p class="dD">design digital</p>
-        </div>
-
-      </div>
-      
-      
-     
-
-      <div class="displayContainer">
-        <div class="display">
-          <!-- <a href="pages/logos.html" class="displayItem">
-            <img src="assets/icons/placeholder.png" alt="">
-            Logotipo e<br>
-            Identidade Visual
+<body>
+  <header>
+    <div class="container">
+      <nav>
+<!--         <div class="menuLogo">
+          <a href="index.html">
+            <img src="../assets/icons/logo.png" alt="Indigo Chroma Studio">
           </a>
-          <a href="pages/print.html" class="displayItem">
-            <img src="assets/icons/placeholder.png" alt="">
-            Cópia e<br>
-            Impressão
-          </a>
-          <a href="pages/3d.html" class="displayItem">
-            <img src="assets/icons/placeholder.png" alt="">
-            Ambientes<br>
-            em 3D
-          </a>
-          <a href="pages/paper.html" class="displayItem">
-            <img src="assets/icons/placeholder.png" alt="">
-            Mateiral de<br>
-            Papelaria
-          </a>
-          <a href="pages/contact.html" class="displayItem">
-            <img src="assets/icons/placeholder.png" alt="">
-            Entre em<br>
-            Contato
-          </a> -->
+        </div> -->
 
-          <div class="displayItem">
-            <a href="pages/logo.html">
-            <img src="assets/icons/placeholder.png" alt="">
-              Logotipo e<br>
-              Identidade Visual</a>
-          </div>
+        <input type="checkbox" class="toggler">
+        <div class="menuIcon"><div></div></div>
 
-          <div class="displayBreak"></div>
-
-          <div class="displayItem">
-            <a href="pages/print.html">
-              <img src="assets/icons/placeholder.png" alt="">
-              Cópia e<br>
-              Impressão
-            </a>
-          </div>
-
-          <div class="displayBreak"></div>
-
-          <div class="displayItem">
-            <a href="pages/3d.html">
-              <img src="assets/icons/placeholder.png" alt="">
-              Ambientes<br>
-              em 3D
-            </a>
-          </div>
-
-          <div class="displayBreak"></div>
-
-          <div class="displayItem">
-            <a href="pages/paper.html">
-              <img src="assets/icons/placeholder.png" alt="">
-              Mateiral de<br>
-              Papelaria
-            </a>
-         </div>
-
-         <div class="displayBreak"></div>
-
-          <div class="displayItem">
-            <a href="pages/contact.html">
-              <img src="assets/icons/placeholder.png" alt="">
-              Entre em<br>
-              Contato
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="showroom">
-
-      </div>
-
-
-      <span class="footer"></span>
+        <ul class="menuList">
+<!--           <li class="menuItem">
+            <a href="index.html" class="menuLink active">Home</a>
+          </li> -->
+          <li class="menuItem">
+            <a href="pages/logo.html" class="menuLink">Logos</a>
+          </li>
+          <li class="menuItem">
+            <a href="pages/print.html" class="menuLink">Impressos</a>
+          </li>
+          <li class="menuItem">
+            <a href="pages/3d.html" class="menuLink">3D</a>
+          </li>
+          <li class="menuItem">
+            <a href="pages/contact.html" class="menuLink">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="logoSplash">
+          <img src="assets/icons/logo.png" alt="Indigo Chroma Studio">
+          <h1>Design Gráfico & Design Digital</h1>
+        </div>
+      </div>
+    </section>
 
     
+    <section class="homeNavBar">
+      <div class="navContainer">
 
+            <a href="pages/logo.html" class="mainMenuLink">
+              <img src="assets/icons/logo.svg">
+              Logotipo e Identidade Visual</a>
 
-    <div class="menu-wrap">
-      <input type="checkbox" class="toggler">
-      <div class="hamburger"><div></div></div>
-      <div class="menu">
-        <a href="../pages/logo.html">Logos</a>
-        <a href="../pages/print.html">Impressos</a>
-        <a href="../pages/3d.html">3D</a>
-        <a href="../pages/paper.html">Papelaria</a>
-        <a href="../pages/contact.html">Contato</a>
+            <a href="pages/print.html" class="mainMenuLink">
+              <img src="assets/icons/print.svg">
+              Impressão e Cópia</a>
+
+            <a href="pages/3d.html" class="mainMenuLink">
+              <img src="assets/icons/3d.svg">
+              Maquete Eletrônica 3D</a>
+
+            <a href="pages/contact.html" class="mainMenuLink">
+              <img src="assets/icons/contact.svg">
+              Contato e Localização</a>
+
       </div>
-    </div>
+    </section>
+
+
+    <section class="showroom">
+      <div class="mainItem l" style="background-image: url(assets/images/pics/logo-design.jpg);">
+        <div>
+          <h3>Logotipo e Identidade Visual</h3>
+          <p>Criamos o seu Logotipo, desenvolvemos a Identidade Visual e tudo mais o que você precisar para sua marca chamar a atenção no meio da concorrência.</p>
+        </div>
+        <a href="pages/logo.html">Veja Mais!</a>
+      </div>
+      <div class="mainItem r" style="background-image: url(assets/images/pics/printer.jpg);">
+        <div>
+          <h3>Gráfica Expressa Digital e Grandes Tiragens</h3>
+          <p>Temos uma grande variedade de produtos impressos. Fazemos desde Impressões e Cópias até grande tiragem de Cartões de   Visita, Folhetos e muito mais.</p>
+        </div>
+        <a href="pages/print.html">Veja Mais!</a>
+      </div>
+      <div class="mainItem l" style="background-image:url(assets/images/pics/stationery.jpg);">
+        <div>
+          <h3>Maquetes Eletrônicas</h3>
+          <p>Damos vida aos seus projetos de engenharia e arquitetura com ambientes 3D realistas.</p>
+        </div>
+        <a href="pages/3d.html">Veja Mais!</a>
+      </div>
+    </section>
+
+
+    <section class="contact">
+      <div class="contactInfo">
+        <a href="pages/contact.html">
+          <h2>Fale com a gente</h2>
+        </a>
+          <p>contato@indigochroma.com<br>
+         (11) 4444-0000<br>
+         (11) 999-888-777</p>
+         
+      </div>
+      <div class="map">
+        <div class="mapouter"><iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=zeferino%20alves%20amaral%201223&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <span class="footer"></span>
+  </footer>
 
 </body>
 

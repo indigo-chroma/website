@@ -1,0 +1,289 @@
+/*nav bar*/
+header {
+	width: 100%;
+	height: 5rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menuLogo {
+    width: 15vw;
+    min-width: 15rem;
+    z-index: 5;
+    padding: 10px 20px;
+	display: none;
+}
+
+
+/*open menu button*/
+.toggler {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	cursor: pointer;
+	width: 8rem;
+	height: 8rem;
+	opacity: 0;
+}
+
+.menuIcon {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 4;
+	width: 8rem;
+	height: 8rem;
+	background: var(--colorCompLight);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menuIcon > div {
+    position: relative;
+    width: 60%;
+    height: .5rem;
+    border-radius: 5px;
+
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+
+    z-index: 6;
+}
+
+.menuIcon > div:before,
+.menuIcon > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+}
+
+.menuIcon > div:after {
+    top: 15px;
+}
+
+.toggler:checked + .menuIcon > div {
+    transform: rotate(135deg);
+}
+
+.toggler:checked + .menuIcon > div:before,
+.toggler:checked + .menuIcon > div:after {
+    top: 0;
+    transition: all 0.4s ease-in-out;
+    transform: rotate(90deg);
+}
+
+
+/*menu*/
+.menuList {
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    width: 60vw;
+    height: 100%;
+
+    opacity: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-between;
+
+    padding: 20vh 10% 40vh;
+    
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 3;
+
+    transition: all 1s ease-in-out;
+}
+
+.menuItem {    
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    
+    margin-top: 3rem;
+
+    transition: all .3s ease-in-out;
+}
+
+.menuItemHome {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.menuItemHome img {
+    width: 10vw;
+    margin: 0 auto;
+}
+
+.menuLink {
+    height: fit-content;
+    opacity: 0;
+    
+    color: var(--colorBaseDark);
+
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    max-height: 2vh;
+    margin: 1rem;
+
+    background-size: 200px 100px;
+
+    transition: all .3s ease-in-out;
+}
+
+.menuItemHome {
+    pointer-events: all;
+}
+
+.menuItemHome a {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem:hover {
+    transition: all .3s ease-in-out;
+    transform: translateX(-20px);
+}
+
+.menuItemHome:hover {
+    transition: all .3s ease-in-out;
+    transform: translateY(-20px);
+}
+
+.menuItem:hover > .menuLink {
+    color: var(--colorCompLight);
+}
+
+.active {
+    pointer-events: none;
+}
+
+.active a {
+    color: gray;
+}
+
+.toggler:checked ~ .menuList {
+    visibility: visible;
+    transform: translateX(-60vw);
+    opacity: 1;
+}
+
+.toggler:checked ~ .menuList .menuItem .menuLink {
+    opacity: 1;
+}
+
+
+
+
+/*media querries*/
+
+@media screen and (min-width: 700px) {
+    nav {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--colorBaseLight);
+    }
+
+	.menuLogo {
+        display: initial;
+    }
+    
+    .toggler {
+        display: none;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .menuList {
+        position: relative;
+        top: initial;
+        right: initial;
+        width: 100%;
+        height: fit-content;
+    
+        opacity: 1;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        text-align: center;
+    
+        padding: 1rem;
+        
+        background: rgba(255, 255, 255, 0);
+        z-index: 3;
+    
+        transition: all 1s ease-in-out;   
+    }
+
+    .menuItem {
+        margin: 0;
+        padding-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .menuItemHome {
+        display: none;
+    }
+    
+    .menuLink {
+        height: fit-content;
+        background-size: fit-content;
+    
+        opacity: 1;
+        font-size: 2rem;
+        padding: 0 2rem;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .menuLink {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menuLink {
+        font-size: 2.5rem;
+    }
+}
