@@ -65,6 +65,7 @@ main {
     margin: 1.5rem auto;
     width: max(7.5vw, 50px);
     height: max(7.5vw, 50px);
+    max-width: 10rem;
 }
 
 
