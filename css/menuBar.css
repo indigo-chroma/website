@@ -5,7 +5,7 @@ header {
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 100;
 }
 
 .container {
@@ -28,7 +28,7 @@ nav {
 .menuLogo {
     width: 15vw;
     min-width: 15rem;
-    z-index: 5;
+    z-index: 150;
     padding: 10px 20px;
 	display: none;
 }
@@ -39,7 +39,7 @@ nav {
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 10;
+	z-index: 1000;
 	cursor: pointer;
 	width: 8rem;
 	height: 8rem;
@@ -50,10 +50,11 @@ nav {
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 4;
+	z-index: 140;
 	width: 8rem;
 	height: 8rem;
-	background: var(--colorCompLight);
+    background: var(--colorCompLight);
+    background-color: rgb(240, 150, 20);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -71,14 +72,14 @@ nav {
     justify-content: center;
     transition: all 0.4s ease-in-out;
 
-    z-index: 6;
+    z-index: 160;
 }
 
 .menuIcon > div:before,
 .menuIcon > div:after {
     content: '';
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     top: -15px;
     width: 100%;
     height: inherit;
@@ -106,8 +107,8 @@ nav {
 .menuList {
     position: fixed;
     top: 0;
-    right: -60vw;
-    width: 60vw;
+    right: -80vw;
+    width: 80vw;
     height: 100%;
 
     opacity: 0;
@@ -120,14 +121,16 @@ nav {
     padding: 20vh 10% 40vh;
     
     background-color: rgba(255, 255, 255, .7);
-    z-index: 3;
+    z-index: 130;
 
     transition: all 1s ease-in-out;
 }
 
-.menuItem {    
+.menuItem,
+.menuItemHome {    
+    position: relative;
     display: flex;
-    text-align: center;
+    text-align: right;
     justify-content: flex-end;
     
     margin-top: 3rem;
@@ -146,6 +149,7 @@ nav {
 .menuItemHome img {
     width: 10vw;
     margin: 0 auto;
+    align-self: center;
 }
 
 .menuLink {
@@ -153,6 +157,7 @@ nav {
     opacity: 0;
     
     color: var(--colorBaseDark);
+    color: rgb(30, 70, 130);
 
     font-size: clamp(2.5rem, 8vw, 5rem);
     max-height: 2vh;
@@ -171,20 +176,27 @@ nav {
     font-size: clamp(1.5rem, 5vw, 3rem);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
-.menuItem:hover {
+
+.menuItem:hover > a{
     transition: all .3s ease-in-out;
-    transform: translateX(-20px);
+    transform: translateY(-10px);
 }
+
 
 .menuItemHome:hover {
     transition: all .3s ease-in-out;
     transform: translateY(-20px);
 }
 
-.menuItem:hover > .menuLink {
+.menuItem:hover > .menuLink,
+.menuItemHome:hover > .menuLink {
     color: var(--colorCompLight);
+    color: rgb(240, 150, 20);
 }
 
 .active {
@@ -192,16 +204,17 @@ nav {
 }
 
 .active a {
-    color: gray;
+    color: rgba(30, 70, 130, .4);
 }
 
 .toggler:checked ~ .menuList {
     visibility: visible;
-    transform: translateX(-60vw);
+    transform: translateX(-80vw);
     opacity: 1;
 }
 
-.toggler:checked ~ .menuList .menuItem .menuLink {
+.toggler:checked ~ .menuList .menuItem .menuLink,
+.toggler:checked ~ .menuList .menuItemHome .menuLink {
     opacity: 1;
 }
 
@@ -211,12 +224,17 @@ nav {
 /*media querries*/
 
 @media screen and (min-width: 700px) {
+    .toggler:checked ~ .menuList {
+        transform: translateX(0);
+    }
+
     nav {
         width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: var(--colorBaseLight);
+        background-color: rgb(150, 190, 255);
     }
 
 	.menuLogo {
@@ -250,9 +268,9 @@ nav {
         padding: 1rem;
         
         background: rgba(255, 255, 255, 0);
-        z-index: 3;
+        z-index: 130;
     
-        transition: all 1s ease-in-out;   
+        transition: all 0s ease-in-out;   
     }
 
     .menuItem {
@@ -274,6 +292,34 @@ nav {
         padding: 0 2rem;
         margin: 0;
     }
+
+
+    .menuItem::after {
+        content: '';
+        position: absolute;
+        bottom: -25%;
+        left: 50%;
+    
+        transform: translateX(-50%);
+    
+        height: 5px;
+        width: 0;
+    
+        transition: all .3s ease-in-out;
+    
+        pointer-events: none;
+        
+        border-radius: 50px;
+        background-color: var(--colorBaseDark);
+        background-color: rgb(30, 70, 130);
+    
+    }
+    
+    .menuItem:hover::after{
+        transition: all .3s ease-in-out;
+        width: 80%;
+    }
+    
 }
 
 @media screen and (min-width: 950px) {
@@ -287,3 +333,7 @@ nav {
         font-size: 2.5rem;
     }
 }
+
+
+
+@media (pointer: coarse) { ... }

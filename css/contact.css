@@ -13,6 +13,7 @@ h2 {
     align-items: center;
 
     background-color: var(--colorBaseLight);
+    background-color: rgb(150, 190, 255);
 }
 
 .contactInfo {
@@ -31,6 +32,7 @@ h2 {
     line-height: 3.5rem;
 
     color: var(--colorBaseDark);
+    color: rgb(30, 70, 130);
 }
 
 .form {
