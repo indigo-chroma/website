@@ -51,8 +51,11 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    font-size: 6vw;
     color: white;
     z-index: 3;
+
+    margin-top: calc(.7vw * 2);
 }
 
 .title .ec {
@@ -66,9 +69,10 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8rem;
+    font-size: 12vw;
     z-index: 2;
-    margin-top: .5rem;
+
+    margin-top: calc(.5vw * 2);
 }
 
 .title .dd {
@@ -81,8 +85,11 @@ main {
     position: absolute;
     bottom: 0;
     right: 0;
+    font-size: 6vw;
     color: white;
     z-index: 3;
+
+    margin-bottom: calc(.7vw * 2);
 }
 
 
@@ -236,6 +243,16 @@ main {
 
     .title {
         margin-top: 15rem;
+    }
+
+    .title .dg, .title .dd {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    .title .ec {
+        margin-top: .5rem;
+        font-size: 8rem;
     }
 
     .homeNavBar {
