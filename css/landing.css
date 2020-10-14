@@ -31,7 +31,7 @@ main {
     /* display: flex;*/
 
     position: relative;
-    height: 12rem;
+    height: 18vw;
     width: 80vw;
     max-width: 55rem;
 }
@@ -55,7 +55,6 @@ main {
     color: white;
     z-index: 3;
 
-    margin-top: calc(.7vw * 2);
 }
 
 .title .ec {
@@ -72,7 +71,7 @@ main {
     font-size: 12vw;
     z-index: 2;
 
-    margin-top: calc(.5vw * 2);
+    margin-top: .8vw;
 }
 
 .title .dd {
@@ -89,13 +88,12 @@ main {
     color: white;
     z-index: 3;
 
-    margin-bottom: calc(.7vw * 2);
 }
 
 
 /*navBar*/
 .homeNavBar {
-    margin-top: 10rem;
+    margin-top: 5rem;
     padding: 0;
     background-color: var(--colorBaseLight);
     background-color: rgb(150, 190, 255);
@@ -243,6 +241,7 @@ main {
 
     .title {
         margin-top: 15rem;
+        height: 12rem;
     }
 
     .title .dg, .title .dd {
