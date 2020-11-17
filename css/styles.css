@@ -23,7 +23,7 @@ html {
  */	background-color: rgb(30, 70, 130);
 }
 
-
+/* delete after */
 .mapouter {
 	position: relative;
 }
@@ -137,7 +137,8 @@ footer {
 	justify-content: center;
 
 	padding: 10px 0;
-					content: '© 2020 | Indigo Chroma Studio | v.0.22';
+	content: '© 2020 | Indigo Chroma Studio';
+	/* v.0.24 */
 }
 
 

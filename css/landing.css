@@ -18,7 +18,8 @@ main {
 
 .logoSplash img {
     margin-top: 10%;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 94rem;
 }
 
 .title {
@@ -235,7 +236,7 @@ main {
 
 
 @media screen and (min-width: 700px){
-    header {
+    header .container{
         display: none;
     }
 

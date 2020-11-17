@@ -89,27 +89,31 @@ iframe {
     }
 
     .contactInfo p {
-        margin: 5rem;
+        margin-right: 5rem;
         text-align: right;
         line-height: 7rem;
     }
 
     .form {
-        width: 60%;
+        width: 60vw;
+        min-width: 300px;
     }
 
     .local {
         width: 100%;
+        padding: auto;
     }
     .localInfo {
         flex-direction: row;
     }
 
-    .localInfo p {
-        margin: 5rem;
-    }
-    
     iframe {
         width: 60vw;
     }
+
+    .localInfo p {
+        margin-left: 5rem;
+        min-width: 25vw;
+    }
+    
 }
