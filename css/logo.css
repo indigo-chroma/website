@@ -21,6 +21,7 @@ h2{
     max-width: 640px;
     max-height: 640px;
     height: 30vw;
+    position: relative;
 
 
     display: flex;
@@ -47,6 +48,54 @@ h2{
 
     padding: 0;
     margin: 0;
+}
+
+.infoLogo {
+    transition: all 0.5s;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 150%;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+.logoList .frame:hover > .infoLogo {
+    transition: all 0.5s;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 66%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.infoLogo > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.infoLogo > div > p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.infoLogo > div > p > a{
+    color: rgb(0, 100, 255);
 }
 
 .aboutLogo {
