@@ -73,7 +73,7 @@
     bottom: 10%;
     right: 50%;
     translate: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(0%, 0%);
     height: 200px;
     width: auto;
     min-width: 355px;
@@ -237,7 +237,7 @@ h2 {
         right: unset;
         top: 50%;
         left: 50%;
-        transform: translate(0%, 0%);
+        transform: translate(-100%, -50%);
         width: 75%;
         height: auto;
         min-width: 355px;
