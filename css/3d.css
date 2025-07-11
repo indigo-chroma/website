@@ -237,7 +237,7 @@ h2 {
         right: unset;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(0%, 0%);
         width: 75%;
         height: auto;
         min-width: 355px;
