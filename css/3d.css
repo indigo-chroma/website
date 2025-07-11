@@ -73,7 +73,7 @@
     bottom: 10%;
     right: 50%;
     translate: 50%;
-    transform: translateX(50%);
+    transform: translate(-100%, -50%);
     height: 200px;
     width: auto;
     min-width: 355px;
